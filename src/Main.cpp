@@ -87,22 +87,21 @@ int main(int argc,char *argv[]) {
 		return 1;
 	}
 	cout << "[i] temp dirs created" << endl;
-	cout << "[i] creating \"master file\" (0%)";
+	cout << "[i] creating \"master file\"" << endl;
 	string fcontent;
 	
 	for (int i = fsize;i > 0;i--) {
 		fcontent = fcontent + "0";
 		double percentage = fcontent.length() / fsize;
-		cout << "\r[i] creating \"master file\" (" << percentage <<"%)";
 	}
 	ofstream mfile("temp/file.file");
 	if (mfile.bad()) {
-		cout << "\n[X] failed to open \"file.file\"" << endl;
+		cout << "[X] failed to open \"file.file\"" << endl;
 		return 1;
 	}
 	mfile << fcontent;
 	mfile.close();
-	cout << "\n[i] \"master file\" created" << endl;
+	cout << "[i] \"master file\" created" << endl;
 	cout << "[i] starting layer generation";
 	for (int i = lamount;i > 0;i--) {
 		cout << "[i] generating layer " << lamount - i << endl;
