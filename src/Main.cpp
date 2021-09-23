@@ -1,3 +1,9 @@
+/*
+
+ This Tool was created by GitRubbens on 2021 
+
+*/
+
 #include <iostream>
 #include <cstdlib>
 #include <fstream>
