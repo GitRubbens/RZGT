@@ -18,3 +18,6 @@ because I don't really know if this can be considered a zip bomb, I just made it
 
 ## why is the master file generation tooooooooooo slow
 because it appends byte per byte in a string in a simple loop (looking for optimizations)
+
+## is this linux compatible
+maybe? i created it in windows for windows so idk if something will break on linux
