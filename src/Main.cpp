@@ -35,7 +35,7 @@ int getNumber(string to_conv) {
 }
 int main(int argc,char *argv[]) {
 	cout << "RZGT - Recursive Zip Generation Tool" << endl;
-	cout << "Created by: https://github.com/GitRubbens" << endl;
+	cout << "Created by: https://github.com/GitRubbens/RZGT" << endl;
 	for (int i = 0;i < argc;i++) {
 		string opt = (string) argv[i];
 		for (int i_ = 0;i_ < sizeof(args)/sizeof(args[0]);i_++) {
